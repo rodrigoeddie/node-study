@@ -1,0 +1,22 @@
+{
+  "name": "node-study",
+  "version": "1.0.0",
+  "description": "Objeto de estudo em node, express, e javascript",
+  "main": "index.js",
+  "author": "Rodrigo de Melo",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon -w src --exec \"babel-node src --presets env\"",
+    "buid": "rimraf dist && babel src -s -D -d dist --presets env",
+    "start": "node dist"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^1.17.5",
+    "rimraf": "^2.6.2"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
